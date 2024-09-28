@@ -1,10 +1,9 @@
-import Videos from "@/app/components/Videos";
+import HomePage from "@/app/components/HomePage";
 
 export default async function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>Celia Wellness</h1>
-      <Videos />
+      <HomePage />
     </main>
   );
 }
