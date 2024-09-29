@@ -6,7 +6,6 @@ import { Input } from "./ui/input"
 import Link from "next/link"
 import { Moon, Sun } from 'lucide-react'
 import ReactPlayer from 'react-player/vimeo'
-import Image from 'next/image'
 
 export default function HomePage() {
   const [darkMode, setDarkMode] = useState(false)
@@ -76,7 +75,7 @@ export default function HomePage() {
       <main className="flex-grow pt-16">
         {/* Hero section (unchanged) */}
         <section className="relative h-screen flex items-center justify-center">
-          <Image
+          <img
             src="https://images.unsplash.com/photo-1545389336-cf090694435e?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3"
             alt="Yoga en la playa"
             className="absolute inset-0 w-full h-full object-cover"
@@ -103,7 +102,7 @@ export default function HomePage() {
               ].map((clase, index) => (
                 <div key={index} className="group cursor-pointer">
                   <div className="relative overflow-hidden rounded-lg">
-                    <Image
+                    <img
                       src={clase.image}
                       alt={clase.title}
                       className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-110"
@@ -125,7 +124,7 @@ export default function HomePage() {
         <section id="about" className="py-20 bg-white dark:bg-gray-900">
           <div className="container mx-auto px-4 flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 mb-8 md:mb-0">
-              <Image
+              <img
                 src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=1000&ixlib=rb-4.0.3"
                 alt="Instructor de Yoga"
                 className="w-full h-auto rounded-lg shadow-lg"
@@ -134,9 +133,9 @@ export default function HomePage() {
             <div className="md:w-1/2 md:pl-12">
               <h2 className="text-3xl md:text-4xl font-light mb-6">Sobre Mí</h2>
               <p className="text-lg mb-6">
-              Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos,
-              quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas, las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
+              Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen. No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
               </p>
+              
               <Button variant="outline">Conoce más</Button>
             </div>
           </div>
